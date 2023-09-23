@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .logo img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .form-container {
+        background-color: #fff;
+        max-width: 400px;
+        margin: 100px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    select {
+        width: 95%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    select {
+        height: 36px;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <div class="form-container">
+        <div class="logo">
+            <img src="img/parkir.jpg" alt="logo-parkir">
+            <h2>FORM PARKIR</h2>
+        </div>
+        <form action="proses1.html" method="post">
+            <label for="plat">No Plat :</label>
+            <input type="text" name="plat" id="plat">
+
+            <label for="jenis">Jenis Kendaraan :</label>
+            <select name="jenis" id="jenis">
+                <option value="mobil">Mobil</option>
+                <option value="motor">Motor</option>
+                <option value="sepeda">Sepeda</option>
+            </select>
+
+            <label for="waktum">Jam Masuk :</label>
+            <input type="time" name="waktum" id="waktum">
+
+            <label for="waktuk">Jam Keluar :</label>
+            <input type="time" name="waktuk" id="waktuk"><br/>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
